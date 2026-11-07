@@ -1,0 +1,4 @@
+{"indexes":[{"collectionGroup":"chats","queryScope":"COLLECTION","fields":[{"fieldPath":"members","arrayConfig":"CONTAINS"},{"fieldPath":"updatedAt","order":"DESCENDING"}]}],
+"fieldOverrides":[
+{"collectionGroup":"messages","fieldPath":"expireAt","indexes":[{"order":"ASCENDING","queryScope":"COLLECTION"},{"order":"DESCENDING","queryScope":"COLLECTION"},{"order":"ASCENDING","queryScope":"COLLECTION_GROUP"}]},
+{"collectionGroup":"messages","fieldPath":"createdAt","indexes":[{"order":"ASCENDING","queryScope":"COLLECTION"},{"order":"DESCENDING","queryScope":"COLLECTION"},{"order":"ASCENDING","queryScope":"COLLECTION_GROUP"}]}]}

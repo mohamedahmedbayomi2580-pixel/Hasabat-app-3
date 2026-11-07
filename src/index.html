@@ -1,0 +1,33 @@
+<!doctype html><html lang="ar" dir="rtl" data-t="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#004F52"><title>Hasabat App | حاسبات ابب</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="splash" class="wrap gl" style="text-align:center"><h1 class="logo" style="display:inline-block">حاسبات ابب</h1><p>أهلًا في عالم حاسبات<br>تحت تطوير محمد أحمد، طالب في كلية حاسبات</p></div>
+<div id="auth" class="wrap gl" hidden><h2 style="text-align:center"><span class="logo">حاسبات ابب</span></h2>
+<div class="tabs"><button id="tL" class="on">تسجيل دخول</button><button id="tR">إنشاء حساب</button></div>
+<div id="regOnly" hidden><div class="f"><label>رقم الهاتف</label><input class="in" id="ph" type="tel" placeholder="01012345678"></div><div class="f"><label>اسم المستخدم</label><input class="in" id="un"></div><div class="f"><label>النوع</label><select class="in" id="gd"><option>ذكر</option><option>أنثى</option></select></div></div>
+<div class="f"><label>البريد الإلكتروني</label><input class="in" id="em" type="text" inputmode="email" autocapitalize="off" autocomplete="username" placeholder="name@mail.com"></div>
+<div class="f"><label>كلمة المرور</label><input class="in" id="pw" type="password" placeholder="ادخل كلمة المرور"></div>
+<p id="pol" hidden style="font-size:12px;color:#ffb066">تنبيه: هذا تطبيق تجاري، ويحق للإدارة مراجعة المحادثات لأغراض الجودة، وتُسجَّل كل عملية وصول إدارية.</p>
+<button class="btn" id="go">تسجيل دخول</button><p id="err" style="color:#ff8a98"></p></div>
+<div id="app" class="app" hidden>
+ <section id="home" class="scr"><div class="bgfx"><i></i><i></i></div>
+  <header class="top gl"><span></span><div class="logo" data-i="appname"></div><div class="hic"><button class="ib" id="srch"><i data-ic="search"></i></button><button class="ib" id="menu"><i data-ic="dots"></i></button></div></header>
+  <div id="sbar" class="sbar gl" hidden><input class="in" id="q" data-ip="search"><button class="ib" id="sx"><i data-ic="x"></i></button></div>
+  <div id="found"></div>
+  <main id="tabs"><div id="t-chats" class="tab on"></div><div id="t-groups" class="tab"></div><div id="t-status" class="tab"></div></main>
+  <button class="fab orb" id="fab"><i data-ic="plus"></i></button>
+  <nav class="bnav gl"><span class="nvi"></span><button data-t="chats"><i data-ic="chat"></i><i class="nb" id="nbc" hidden></i><span data-i="chats"></span></button><button data-t="groups"><i data-ic="users"></i><span data-i="groups"></span></button><button data-t="status"><i data-ic="refresh"></i><span data-i="status"></span></button><button id="dn"><i data-ic="sunmoon"></i><span data-i="daynight"></span></button></nav>
+ </section>
+ <section id="set" class="scr pg"><header class="top gl chd"><button class="ib" id="setbk"><i data-ic="back" class="flip"></i></button><h2 id="settl" style="flex:1;margin:0;font-size:18px"></h2><span class="ib"><i data-ic="gear"></i></span></header><div id="setb" class="ibody"></div></section>
+ <section id="chat" class="scr pg">
+  <header class="top gl chd"><button class="ib" id="bk"><i data-ic="back" class="flip"></i></button><div class="ch" id="chead"><span id="cav"></span><div style="min-width:0"><b id="cname"></b><small id="cstat"></small></div></div><button class="ib" id="csr"><i data-ic="search"></i></button><button class="ib" id="cmn"><i data-ic="dots"></i></button></header>
+  <div id="selbar" class="selbar gl" hidden><button class="ib" id="selx"><i data-ic="x"></i></button><b id="selc"></b><button class="ib" id="selcp"><i data-ic="copy"></i></button><button class="ib" id="selfw"><i data-ic="fwd"></i></button><button class="ib" id="seldl"><i data-ic="trash"></i></button></div>
+  <div id="csb" class="sbar gl" hidden><input class="in" id="cq" placeholder="🔍"></div>
+  <div id="pin" class="pinb gl" hidden></div>
+  <div class="msgs" id="ms"></div>
+  <div id="rbar" class="rbar gl" hidden><span id="rtx"></span><button class="ib" id="rx"><i data-ic="x"></i></button></div>
+  <div id="emo" class="emo gl" hidden></div>
+  <div class="comp gl"><button class="ib" id="emb"><i data-ic="emoji"></i></button><input class="in" id="tx" data-ip="type" autocomplete="off"><button class="ib" id="mic"><i data-ic="mic"></i></button><button class="ib orb send snd" id="sd"><i data-ic="send"></i></button><div id="rec" hidden><button class="ib" id="rc"><i data-ic="trash"></i></button><span id="rt">⏺ 0:00</span><button class="ib orb send snd" id="rs"><i data-ic="send"></i></button></div></div>
+ </section>
+ <section id="info" class="scr pg"><header class="top gl chd"><button class="ib" id="ibk"><i data-ic="back" class="flip"></i></button><h2 data-i="info" style="flex:1;margin:0;font-size:18px"></h2></header><div id="ib" class="ibody"></div></section>
+</div>
+<div id="sv" hidden></div><div id="sheet" hidden></div><div id="toast" hidden></div><input type="file" id="bfile" accept=".json,application/json" hidden>
+<script type="module" src="app.js"></script></body></html>
